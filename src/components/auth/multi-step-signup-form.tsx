@@ -377,7 +377,8 @@ export default function MultiStepSignupForm() {
 								<ArrowLeft className="mr-2 h-4 w-4" /> Précédent
 							</Button>
 							<Button type="submit" disabled={isPending}>
-								{isPending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : "S'inscrire"}
+								{isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+								{isPending ? "Inscription en cours" : "S'inscrire"}
 							</Button>
 						</div>
 					</>

@@ -63,7 +63,7 @@ export default function ProtectedLayout({
 				<Header setSidebarOpen={setSidebarOpen} />
 
 				<main className="flex-1 px-4 py-8 sm:px-6 lg:px-8 lg:pl-64">
-					<div className="mx-auto w-full max-w-7xls">{children}</div>
+					<div className="mx-auto w-full max-w-7xl">{children}</div>
 				</main>
 			</div>
 		</div>

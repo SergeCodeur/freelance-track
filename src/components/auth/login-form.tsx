@@ -119,7 +119,8 @@ export default function LoginForm() {
 				)}
 
 				<Button type="submit" className="w-full" disabled={isPending}>
-					{isPending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Se connecter'}
+					{isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+					{isPending ? "connexion en cours" : "Se connecter"}
 				</Button>
 			</form>
 		</Form>

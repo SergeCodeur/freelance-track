@@ -1,6 +1,6 @@
 'use client';
 
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'; // For mobile
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@/components/ui/sheet'; // For mobile
 import { cn } from '@/lib/utils';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Briefcase, LayoutDashboard, User, Users } from 'lucide-react';
@@ -84,6 +84,9 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
 					</SheetTitle>
 				</SheetHeader>
 				<SheetContent side="left" className="w-64 p-0">
+					<SheetDescription>
+						<VisuallyHidden>Description de la sidebar</VisuallyHidden>
+					</SheetDescription>
 					{content}
 				</SheetContent>
 			</Sheet>
