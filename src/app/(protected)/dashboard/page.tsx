@@ -11,7 +11,7 @@ import {
 	CardHeader,
 	CardTitle
 } from "@/components/ui/card";
-import { AlertCircle, Briefcase, CheckCircle, Clock, Loader2 } from 'lucide-react';
+import { AlertCircle, Briefcase, CheckCircle, Clock } from 'lucide-react';
 import { useMemo } from 'react';
 
 import RecentMissions from '@/components/dashboard/recent-missions';
@@ -19,6 +19,8 @@ import RevenueChart from '@/components/dashboard/revenue-chart';
 import TotalMissions from '@/components/dashboard/total-missions';
 import TotalRevenue from '@/components/dashboard/total-revenue';
 
+import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { useMissionStore } from '@/store/mission-store';
 import { useUserStore } from '@/store/user-store';
 
@@ -54,8 +56,35 @@ export default function DashboardPage() {
 
 	if (missionsLoading) {
 		return (
-			<div className="flex justify-center items-center h-64">
-				<Loader2 className="h-12 w-12 animate-spin text-primary" />
+			<div className="space-y-6">
+				<div className="flex flex-col gap-1">
+					<Skeleton className="h-8 w-1/3" />
+					<Skeleton className="h-4 w-1/4" />
+				</div>
+
+				<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+					{[...Array(3)].map((_, i) => (
+						<Card key={i} className="shadow-sm">
+							<CardHeader>
+								<Skeleton className="h-4 w-1/3 mb-2" />
+								<Skeleton className="h-6 w-1/2" />
+							</CardHeader>
+							<CardContent className="space-y-2">
+								<Skeleton className="h-6 w-2/3" />
+								<Skeleton className="h-4 w-1/2" />
+							</CardContent>
+						</Card>
+					))}
+				</div>
+
+				<div className="grid grid-cols-1 xl:grid-cols-5 gap-6">
+					<div className="xl:col-span-3">
+						<Skeleton className="h-96 w-full" />
+					</div>
+					<div className="xl:col-span-2">
+						<Skeleton className="h-96 w-full" />
+					</div>
+				</div>
 			</div>
 		);
 	}
@@ -67,7 +96,7 @@ export default function DashboardPage() {
 				<AlertTitle>Erreur de chargement</AlertTitle>
 				<AlertDescription>
 					Impossible de charger les missions. {missionsError}
-					<button onClick={fetchMissions} className="ml-2 underline">Réessayer</button>
+					<Button onClick={fetchMissions} variant={"ghost"}>Réessayer</Button>
 				</AlertDescription>
 			</Alert>
 		);

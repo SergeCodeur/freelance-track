@@ -23,7 +23,7 @@ const navigation = [
 
 export default function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
 	const pathname = usePathname();
-	const { theme } = useTheme()
+	const { theme } = useTheme();
 
 	const content = (
 		<div className="flex grow flex-col gap-y-5 overflow-y-auto bg-card px-6 pb-4 border-r border-border">
@@ -78,12 +78,12 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
 
 			{/* Mobile sidebar */}
 			<Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
-				<SheetHeader>
-					<SheetTitle>
-						<VisuallyHidden>Menu de navigation</VisuallyHidden>
-					</SheetTitle>
-				</SheetHeader>
 				<SheetContent side="left" className="w-64 p-0">
+					<SheetHeader>
+						<SheetTitle>
+							<VisuallyHidden>Menu de navigation</VisuallyHidden>
+						</SheetTitle>
+					</SheetHeader>
 					<SheetDescription>
 						<VisuallyHidden>Description de la sidebar</VisuallyHidden>
 					</SheetDescription>

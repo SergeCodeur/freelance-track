@@ -62,8 +62,8 @@ export default function ProtectedLayout({
 				{/* Site header */}
 				<Header setSidebarOpen={setSidebarOpen} />
 
-				<main className="flex-1 px-4 py-8 sm:px-6 lg:px-8 lg:pl-64">
-					<div className="mx-auto w-full max-w-7xl">{children}</div>
+				<main className="flex-1">
+					<div className="mx-auto w-full max-w-7xl py-8 sm:px-6 lg:pl-64">{children}</div>
 				</main>
 			</div>
 		</div>
