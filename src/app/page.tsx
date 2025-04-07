@@ -32,7 +32,7 @@ export default function LandingPage() {
               Gérez Vos Missions Freelance Sans Effort<span className="text-primary">.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-muted-foreground">
-              De la prospection au paiement, {appName} centralise le suivi de vos projets, revenus et clients pour vous libérer l'esprit.
+              De la prospection au paiement, {appName} centralise le suivi de vos projets, revenus et clients pour vous libérer l&apos;esprit.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button size="lg" asChild>
@@ -76,7 +76,7 @@ export default function LandingPage() {
           <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Conçu pour les indépendants exigeants</h2>
-              <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">Que vous soyez développeur, designer, rédacteur ou consultant, {appName} s'adapte à vous.</p>
+              <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">Que vous soyez développeur, designer, rédacteur ou consultant, {appName} s&apos;adapte à vous.</p>
             </div>
             <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-5">
               <TargetProfile icon={Code} label="Développeurs" />
@@ -93,7 +93,7 @@ export default function LandingPage() {
           <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Une interface claire, des résultats immédiats</h2>
-              <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">Visualisez l'état de votre activité en un clin d'œil.</p>
+              <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">Visualisez l'état de votre activité en un clin d&apos;œil.</p>
             </div>
             <div className="rounded-xl bg-muted/20 p-2 ring-1 ring-inset ring-muted/30 lg:p-4">
               <Image
@@ -124,7 +124,7 @@ export default function LandingPage() {
               Prêt à reprendre le contrôle de votre activité freelance ?
             </h2>
             <p className="mt-6 text-base sm:text-lg leading-relaxed text-muted-foreground">
-              Créez votre compte gratuitement dès aujourd'hui et découvrez comment {appName} peut simplifier votre gestion administrative.
+              Créez votre compte gratuitement dès aujourd&apos;hui et découvrez comment {appName} peut simplifier votre gestion administrative.
             </p>
             <div className="mt-10">
               <Button size="lg" asChild className="text-base sm:text-lg px-8 py-3">
