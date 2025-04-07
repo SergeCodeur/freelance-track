@@ -85,7 +85,7 @@ export default function LandingHeader() {
 						<Link href="/signin">Se connecter</Link>
 					</Button>
 					<Button size="sm" asChild>
-						<Link href="/signup">S&apos;inscrire</Link>
+						<Link href="/signup">S'inscrire</Link>
 					</Button>
 				</div>
 
@@ -128,7 +128,7 @@ export default function LandingHeader() {
 								</SheetClose>
 								<SheetClose asChild>
 									<Button asChild>
-										<Link href="/signup">S&apos;inscrire gratuitement</Link>
+										<Link href="/signup">S'inscrire gratuitement</Link>
 									</Button>
 								</SheetClose>
 							</div>
