@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { cn } from "@/lib/utils"
 import { Star } from "lucide-react"
 import Image from "next/image"
@@ -61,9 +61,9 @@ const testimonials: Testimonial[] = [
 
 
 export default function TestimonialsCarousel() {
-	const [api, setApi] = useState<any>()
-	const [current, setCurrent] = useState(0)
-	const [count, setCount] = useState(0)
+	const [api, setApi] = useState<CarouselApi | undefined>();
+	const [current, setCurrent] = useState(0);
+	const [count, setCount] = useState(0);
 
 	useEffect(() => {
 		if (!api) {

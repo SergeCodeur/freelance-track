@@ -20,7 +20,13 @@ export default function LandingPage() {
       <div className="pt-16 bg-background text-foreground ">
         {/* Hero Section */}
         <section id="hero" className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-background via-background to-secondary/30 px-4 py-20 text-center sm:px-6 lg:px-8">
-          <div className="absolute inset-0 -z-10 opacity-5" style={{ backgroundImage: 'radial-gradient(circle, hsl(var(--primary) / 0.1) 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+          <div
+            className="absolute inset-0 -z-10 opacity-20 pointer-events-none"
+            style={{
+              backgroundImage: 'radial-gradient(circle, rgba(99,102,241,0.1) 1px, transparent 1px)',
+              backgroundSize: '20px 20px',
+            }}
+          />
           <div className="w-full max-w-screen-md">
             <h1 className="scroll-m-20 text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               Gérez Vos Missions Freelance Sans Effort<span className="text-primary">.</span>
@@ -105,7 +111,7 @@ export default function LandingPage() {
         <section id="testimonials" className="w-full bg-gradient-to-b from-secondary/30 via-background to-background py-16 sm:py-24">
           <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Ce qu'ils pensent de {appName}</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Ce qu&apos;ils pensent de {appName}</h2>
             </div>
             <Testimonial />
           </div>
